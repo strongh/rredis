@@ -1,7 +1,7 @@
 \name{redisTTL}
 \alias{redisTTL}
 \title{Return the time to live for a key set to expire.}
-\description{She the time left to live in seconds for the specified key.}
+\description{Set the time left to live in seconds for the specified key.}
 \usage{
 redisTTL(key)
 }
