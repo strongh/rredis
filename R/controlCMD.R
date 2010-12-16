@@ -33,6 +33,12 @@ function()
   remove(list='con',envir=.redisEnv)
 }
 
+`redisIsConnected` <-
+function()
+{
+  exists("con",envir=.redisEnv) && isOpen(.redisEnv$con)
+}
+
 `redisAuth` <- 
 function(pwd)
 {
